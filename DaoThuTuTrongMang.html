@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đảo các thứ tự trong mảng</title>
+</head>
+<body>
+<script>
+    let x = [-3, 5, 1, 3, 2, 10];
+    let Dau = 0;
+    let Cuoi = x.length - 1;
+    while (Dau < Cuoi) {
+        let SoDau = x[Dau];
+        x[Dau] = x[Cuoi];
+        x[Cuoi] = SoDau;
+        Dau++;
+        Cuoi--;
+    }
+    document.write('[' + x + ']');
+</script>
+</body>
+</html>
